@@ -4,7 +4,7 @@ Pencil.Gaming is a gaming library for C#, providing support for OpenGL, GLFW, Op
 
 The OpenGL implementation is based on the OpenTK source code.
 
-Functionality and stability
+Functionality and stability(Not Checked for the new GLFW lib V3.2 which is added in this repository)
 ===========================
 GLFW2
 -----
@@ -18,7 +18,7 @@ GLFW2
 
 GLFW3
 -----
-| Platform       | OpenGL core     | OpenGL extensions | GLFW            | OpenAL    |
+| Platform       | OpenGL core     | OpenGL extensions | GLFW V3.2       | OpenAL    |
 | --------------:|:---------------:|:-----------------:|:---------------:|:---------:|
 | Linux 64-bit   | Stable          | Stable            | Stable          | Stable    |
 | Linux 32-bit   | Stable          | Stable            | **Broken**      | Stable    |

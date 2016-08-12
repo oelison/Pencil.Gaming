@@ -23,23 +23,26 @@
 
 #if USE_GLFW3
 
-namespace Pencil.Gaming {
+namespace Pencil.Gaming
+{
 
 	public enum KeyModifiers
 	{
-		Shift   = 1 << 0, //1
+		Shift = 1 << 0, //1
 		Control = 1 << 1, //2
-		Alt     = 1 << 2, //4
-		Super   = 1 << 3  //8
+		Alt = 1 << 2, //4
+		Super = 1 << 3  //8
 	}
 
-	public enum KeyAction {
+	public enum KeyAction
+	{
 		Release = 0,
 		Press,
 		Repeat,
 	}
 
-	public enum MouseButton {
+	public enum MouseButton
+	{
 		Button1 = 0,
 		Button2,
 		Button3,
@@ -53,7 +56,8 @@ namespace Pencil.Gaming {
 		MiddleButton,
 	}
 
-	public enum Joystick {
+	public enum Joystick
+	{
 		Joystick1 = 0,
 		Joystick2,
 		Joystick3,
@@ -72,7 +76,8 @@ namespace Pencil.Gaming {
 		Joystick16,
 	}
 
-	public enum Key {
+	public enum Key
+	{
 		Space = 32,
 		Apostrophe = 39,
 		Comma = 44,
@@ -195,9 +200,10 @@ namespace Pencil.Gaming {
 		Menu,
 	}
 
-	public enum GlfwError {
+	public enum GlfwError
+	{
 		NoError = 0,
-        NotInitialized = 0x10001,
+		NotInitialized = 0x10001,
 		NoCurrentContext,
 		InvalidEnum,
 		InvalidValue,
@@ -208,15 +214,18 @@ namespace Pencil.Gaming {
 		FormatUnavailable,
 	}
 
-	public enum WindowAttrib {
+	public enum WindowAttrib
+	{
 		Focused = 0x20001,
 		Iconified,
 		Resizeable,
-        Visible,
-        Decorated
+		Visible,
+		Decorated,
+		AutoIconify
 	}
 
-	public enum WindowHint {
+	public enum WindowHint
+	{
 		RedBits = 0x21001,
 		GreenBits,
 		BlueBits,
@@ -231,48 +240,54 @@ namespace Pencil.Gaming {
 		Stereo,
 		Samples,
 		SRGBCapable,
-        RefreshRate,
+		RefreshRate,
 		ClientAPI = 0x22001,
 		ContextVersionMajor,
 		ContextVersionMinor,
-        ContextRevision,
+		ContextRevision,
 		ContextRobustness,
 		OpenGLForwardCompat,
 		OpenGLDebugContext,
 		OpenGLProfile,
 	}
 
-	public enum OpenGLAPI {
+	public enum OpenGLAPI
+	{
 		OpenGLAPI = 0x30001,
 		OpenGLESAPI,
 	}
 
-	public enum ContextRobustness {
+	public enum ContextRobustness
+	{
 		NoRobustness = 0,
-        NoResetNotification = 0x031001,
+		NoResetNotification = 0x031001,
 		LoseContextOnReset,
 	}
 
-	public enum OpenGLProfile {
+	public enum OpenGLProfile
+	{
 		Any = 0,
-        Core = 0x032001,
+		Core = 0x032001,
 		Compatibility,
 	}
 
-	public enum InputMode {
-        CursorMode = 0x00033001,
+	public enum InputMode
+	{
+		CursorMode = 0x00033001,
 		StickyKeys,
 		StickyMouseButtons,
 	}
 
-	public enum CursorMode {
-        CursorNormal = 0x00034001,
+	public enum CursorMode
+	{
+		CursorNormal = 0x00034001,
 		CursorHidden,
 		CursorCaptured,
 	}
 
-	public enum ConnectionState {
-        Connected = 0x00040001,
+	public enum ConnectionState
+	{
+		Connected = 0x00040001,
 		Disconnected,
 	}
 }
